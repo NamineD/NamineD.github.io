@@ -398,6 +398,11 @@ span {
         text-align: center;
     }
 
+    .container-info p {
+        padding-top: 10px;
+        margin: auto;
+    }
+
     #titulos p {
         width: 60vw;
     }
@@ -478,6 +483,11 @@ span {
         text-align: center;
     }
 
+    .container-info p {
+        padding-top: 10px;
+        margin: auto;
+    }
+
     #titulos p {
         width: 60vw;
     }
@@ -550,15 +560,20 @@ span {
         padding: 10px 26px;
     }
 
-    #conteiner_sobreMi, #logo, #titulos, #titulos p, #titulos h2 {
+    #conteiner_sobreMi,  #logo, #titulos, #titulos p, #titulos h2 {
         display: block;
-        margin: auto;
         padding-top: 15px;
-        text-align: center;
+    }
+
+    #conteiner-info {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        width: 80vw;
     }
 
     #titulos p {
-        width: 60vw;
+        width: 70vw;
     }
 
     #logo {
