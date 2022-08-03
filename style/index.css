@@ -123,7 +123,7 @@ body {
 }
 
 .presentation a:hover, em {
-    color: #1fe4f5;
+    color: #1c67c9;
 }
 
 .container_cards {
@@ -153,7 +153,7 @@ body {
 .card_icon {
     position: relative;
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(0, 0, 0, 0.9);
     grid-row: 2/3;
     font-size: 30px;
 }
@@ -161,7 +161,7 @@ body {
 .card__title {
     grid-row: 3/4;
     font-weight: 400;
-    color: #ffffff;
+    color: #000000;
 }
 
 /* Skills */
@@ -320,6 +320,11 @@ body {
     background:#ffebee;
 }
 
+#projects a {
+    text-decoration: none;
+    color: #000000;
+}
+
 .container-card{
     display: flex;
     justify-content: center;
@@ -344,7 +349,7 @@ body {
 }
 
 .presentation_light .shadow_mini {
-    background-color:rgba(47, 139, 165, 0.4);
+    background-color:rgba(16, 62, 75, 0.4);
     position: absolute;
     top:0;
     left:0;
@@ -373,7 +378,7 @@ body {
 }
 
 .presentation_light:hover .deroul_titre{
-    background-color:#190a6e; left:0px;
+    background-color:#2558ff; left:0px;
 }
 
 .presentation_light .deroul_soustitre {
@@ -469,4 +474,320 @@ body {
     bottom: 0;
     width: 100%;
     height: 40px;
+}
+
+/* Pc */
+
+@media all and (max-width: 1200px) {
+    
+    .navMenu a {
+        font-size: 15px;
+        padding: 20px 10px 0 10px;
+    }
+
+    .navMenu a:nth-child(1):hover ~ .dot {
+        transform: translateX(30px);
+      }
+      
+      .navMenu a:nth-child(2):hover ~ .dot {
+        transform: translateX(110px);
+      }
+        
+      .navMenu a:nth-child(3):hover ~ .dot {
+        transform: translateX(250px);
+      }
+        
+      .navMenu a:nth-child(4):hover ~ .dot {
+          transform: translateX(375px);
+      }
+      
+      .navMenu a:nth-child(5):hover ~ .dot {
+          transform: translateX(464px);
+      }
+
+      .container_cards {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .cardHeader {
+        margin: 10px;
+        min-height: 170px;
+        height: 60px;
+        width: 300px;
+    }
+
+    .card_icon i {
+        font-size: 20px;
+    }
+
+    .card__title {
+        font-size: 15px;
+    }
+
+      .skill {
+        margin: 10px;
+        width: 110px;
+        height: 111px;
+    } 
+
+    
+    .skill:hover .overlay {
+        transform: scale(7) translateZ(0);
+    }
+    
+    
+    .skill li {
+        font-size: 17px;
+        color: #4C5656;
+        margin-top: 10px;
+        z-index: 1000;
+        transition: color 0.3s ease-out;
+    }
+    
+    .circle {
+        width: 85px;
+        height: 95px;
+        border-radius: 50%;
+        border: 2px solid var(--bg-color);
+    }
+    
+    .circle::after {
+        width: 88px;
+        height: 88px;
+        border-radius: 50%;
+        top: -1px;
+        left: -4px;
+    }
+    
+    .skill img {
+        width: 50px;
+        z-index: 100;
+    }
+    
+    .overlay {
+        width: 38px;
+        position: absolute; 
+        height: 38px;
+        border-radius: 50%;
+        background: var(--bg-color);
+        top: 10px;
+        left: 20px;
+        z-index: 0;
+        transition: transform 0.3s ease-out;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    
+    .navMenu a {
+        font-size: 15px;
+        padding: 20px 10px 0 10px;
+    }
+
+    .navMenu a:nth-child(1):hover ~ .dot {
+        transform: translateX(30px);
+      }
+      
+      .navMenu a:nth-child(2):hover ~ .dot {
+        transform: translateX(110px);
+      }
+        
+      .navMenu a:nth-child(3):hover ~ .dot {
+        transform: translateX(250px);
+      }
+        
+      .navMenu a:nth-child(4):hover ~ .dot {
+          transform: translateX(375px);
+      }
+      
+      .navMenu a:nth-child(5):hover ~ .dot {
+          transform: translateX(464px);
+      }
+
+      .container_cards {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .cardHeader {
+        margin: 10px;
+        min-height: 170px;
+        height: 60px;
+        width: 300px;
+    }
+
+    .card_icon i {
+        font-size: 20px;
+    }
+
+    .card__title {
+        font-size: 15px;
+    }
+
+      .skill {
+        margin: 10px;
+        width: 110px;
+        height: 111px;
+    } 
+
+    
+    .skill:hover .overlay {
+        transform: scale(7) translateZ(0);
+    }
+    
+    
+    .skill li {
+        font-size: 17px;
+        color: #4C5656;
+        margin-top: 10px;
+        z-index: 1000;
+        transition: color 0.3s ease-out;
+    }
+    
+    .circle {
+        width: 85px;
+        height: 95px;
+        border-radius: 50%;
+        border: 2px solid var(--bg-color);
+    }
+    
+    .circle::after {
+        width: 88px;
+        height: 88px;
+        border-radius: 50%;
+        top: -1px;
+        left: -4px;
+    }
+    
+    .skill img {
+        width: 50px;
+        z-index: 100;
+    }
+    
+    .overlay {
+        width: 38px;
+        position: absolute; 
+        height: 38px;
+        border-radius: 50%;
+        background: var(--bg-color);
+        top: 10px;
+        left: 20px;
+        z-index: 0;
+        transition: transform 0.3s ease-out;
+    }
+}
+
+/* Tablets */
+@media all and (max-width: 768px) {
+
+
+    .navMenu{
+        padding: 0 20px 0 20px;
+        display: flex;
+        height: 4vh;
+        top: 0%;
+    }
+
+    .navMenu a {
+        width: 100%;
+    }
+
+    .skills ul {
+        width: 100%;
+    }
+}
+
+/* Phone */
+
+@media all and (max-width: 480px) {
+
+    .navMenu{
+        padding: 0 20px 0 20px;
+    }
+
+    .navMenu a {
+        font-size: 15px;
+        padding: 20px 6px 0 6px;
+    }
+
+    .container_cards {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .cardHeader {
+        margin: 10px;
+        min-height: 170px;
+        height: 60px;
+        width: 300px;
+    }
+
+    .card_icon i {
+        font-size: 20px;
+    }
+
+    .card__title {
+        font-size: 15px;
+    }
+
+    .skill {
+        margin: 10px;
+        width: 120px;
+        height: 121px;
+    } 
+
+    
+    .skill:hover .overlay {
+        transform: scale(7) translateZ(0);
+    }
+    
+    
+    .skill li {
+        font-size: 17px;
+        color: #4C5656;
+        margin-top: 20px;
+        z-index: 1000;
+        transition: color 0.3s ease-out;
+    }
+    
+    .circle {
+        width: 85px;
+        height: 95px;
+        border-radius: 50%;
+        border: 2px solid var(--bg-color);
+    }
+    
+    .circle::after {
+        width: 88px;
+        height: 88px;
+        border-radius: 50%;
+        top: -1px;
+        left: -4px;
+    }
+    
+    .skill img {
+        width: 50px;
+        z-index: 100;
+    }
+    
+    .overlay {
+        width: 38px;
+        position: absolute; 
+        height: 38px;
+        border-radius: 50%;
+        background: var(--bg-color);
+        top: 10px;
+        left: 20px;
+        z-index: 0;
+        transition: transform 0.3s ease-out;
+    }
+}
+
+@media all and (max-width: 320px) {
+
+    .navMenu a {
+        font-size: 13px;
+        padding: 24px 4px 0 4px;
+    }
 }
