@@ -267,6 +267,10 @@ header .navbar ul li a:hover{
     color: #eee;
 }
 
+.project a {
+    color: #eee;
+}
+
 .contact .row{
     display: flex;
     align-items: center;
