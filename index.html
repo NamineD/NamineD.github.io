@@ -46,7 +46,7 @@
 
             <div class="info">
                 <h3><span>Nombre:</span>Daiana Elizabeth Gimenez</h3>
-                <h3><span>Edad:</span>24</h3>
+                <h3><span>Edad:</span>25</h3>
                 <h3><span>Seniority:</span>Junior</h3>
                 <h3><span>Puesto:</span>Front end developer</h3>
                 <a href="Daiana Gimenez CV.pdf" target="_blank"><button class="btn">Download CV <i class="fas fa-download"></i></button></a>
@@ -146,6 +146,15 @@
                 <button class="btn"><a href="https://youtu.be/W8jDkgW37oo" target="_blank"><i class="fas fa-pager"></i>Demo</a></button>
                 <button class="btn"><a href="https://github.com/NamineD/react-noticias" target="_blank"><i class="fab fa-github"></i>Github</a></button>
             </div>
+
+            <div class="project">
+                <div class="box">
+                    <img src="images/alkemy.png" alt="Alemy">
+                </div>
+                <p>Billetera virtual utilizando una API de Alkemy.</p>
+                <button class="btn"><a href="https://skill-up-react-eta.vercel.app/" target="_blank"><i class="fas fa-pager"></i>Demo</a></button>
+                <button class="btn"><a href="https://github.com/luiseliasdavid/Skill-Up-React" target="_blank"><i class="fab fa-github"></i>Github</a></button>
+            </div>
             
 
         </div>
@@ -173,10 +182,10 @@
 
             <form action="https://formsubmit.co/namined09@gmail.com" method="POST" >
 
-                <input type="text" placeholder="Nombre" name="name" class="box">
-                <input type="email" placeholder="Email" name="email" class="box">
-                <input type="text" placeholder="Asunto" name="subject" class="box">
-                <textarea name="message" id="" cols="30" rows="10" class="box message" placeholder="Mensaje"></textarea>
+                <input type="text" placeholder="Nombre" name="name" class="box" required  maxlength="60">
+                <input type="email" placeholder="Email" name="email" class="box" required >
+                <input type="text" placeholder="Asunto" name="subject" class="box" required >
+                <textarea name="message" id="" cols="30" rows="10" class="box message" placeholder="Mensaje" required ></textarea>
                 <button type="submit" class="btn"> Enviar <i class="fas fa-paper-plane"></i> </button>
 
             </form>
